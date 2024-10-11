@@ -6,8 +6,8 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        String circleFile = "C:\\QA TEST\\task2\\circle.txt";
-        String pointsFile = "C:\\QA TEST\\task2\\points.txt";
+        String circleFile = "./task2/circle.txt";
+        String pointsFile = "./task2/points.txt";
 
         List<String> circle = Files.readAllLines(Paths.get(circleFile));
         String[] circleCoords = circle.get(0).split(" ");

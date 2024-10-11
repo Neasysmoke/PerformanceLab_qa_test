@@ -12,11 +12,10 @@ import java.util.Map;
 
 public class Main {
 
-    public static void main(String[] args) {
-
-        String valuesPath = "C:\\QA TEST\\task3\\values.json";
-        String testsPath = "C:\\QA TEST\\task3\\tests.json";
-        String reportPath = "C:\\QA TEST\\task3\\report.json";
+    public static void main(String[] args) throws IOException {
+        String valuesPath = "./task3/values.json";
+        String testsPath = "./task3/tests.json";
+        String reportPath = "./task3/report.json";
 
         try {
             Gson gson = new GsonBuilder().setPrettyPrinting().create();
